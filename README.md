@@ -1,4 +1,4 @@
-# Utiliser Ente Auth et Ente CLI pour gérer ses codes 2FA dans Termux
+# Utiliser Ente Auth et Ente CLI pour gé(né)rer ses codes 2FA dans Termux
 
 ## Présentation
 
