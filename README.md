@@ -123,6 +123,8 @@ grep -i 'github' secrets.txt | head -n1 | grep -oP 'secret=\K[A-Z2-7]+' | xargs 
 
 **Ce guide est conçu pour garantir la sécurité et la portabilité de vos codes 2FA, tout en restant fidèle à l’esprit open source et à la documentation officielle Ente.**
 
+valorisa (3 juillet 2025)
+
 Citations :
 [1] ente/auth/README.md at main · ente-io/ente - GitHub https://github.com/ente-io/ente/blob/main/auth/README.md
 [2] Exporting your data from Ente Auth https://help.ente.io/auth/migration-guides/export
