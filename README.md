@@ -1,4 +1,4 @@
-# ente-auth-cli-android
+# Ente-Auth-cli-android
 
 **Gérez et générez vos codes 2FA Ente Auth en ligne de commande sous Android (Termux) avec Ente CLI et oathtool.**
 
