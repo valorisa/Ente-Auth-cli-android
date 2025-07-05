@@ -111,7 +111,7 @@ totp() {
     | xargs -I{} oathtool --totp -b {}
 }
 ```
-Utilisation  (ici GitHub ou un autre service comme Gmail, etc.:
+Utilisation  (ici GitHub ou un autre service comme Gmail, etc., :
 ```sh
 totp GitHub
 ```
