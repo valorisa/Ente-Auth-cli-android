@@ -124,4 +124,4 @@ totp GitHub
 
 **Ce guide vise à garantir la sécurité et la portabilité de vos codes 2FA, tout en restant fidèle à l’esprit open source et à la documentation officielle Ente.**
 
-Auteur : **valorisa** (le 5 juillet 2025)
+Auteur : **valorisa** [le 5 juillet 2025]
