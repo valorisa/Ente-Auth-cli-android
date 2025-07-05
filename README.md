@@ -7,7 +7,7 @@
 Ce guide explique comment :
 - Exporter vos codes 2FA depuis Ente Auth (export chiffré)
 - Déchiffrer cet export avec Ente CLI dans Termux sous Android
-- Générer vos codes TOTP en ligne de commande avec oathtool
+- Générer vos codes TOTP (Time-based One Time Password) en ligne de commande avec oathtool
 
 La procédure s’appuie sur la documentation officielle Ente Auth et sur des retours d’expérience réels, en détaillant les erreurs courantes et leurs solutions.
 
