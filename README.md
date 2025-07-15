@@ -118,7 +118,7 @@ totp GitHub
 
 ## Conclusion 
 
-Comparer les codes générés par un script `Totp.sh` et ceux de l’application mobile Ente Auth est la meilleure méthode rigoureuse pour vérifier la justesse de la génération TOTP.
+Comparer les codes générés par un script `Totp.sh` et ceux de l’application mobile Ente Auth est la meilleure méthode (rigoureuse) pour vérifier la justesse de la génération TOTP.
 
 Ce que l’on constate confirme ce que détaillent les ressources :  
 Ente Auth (mobile ou CLI) est une application conforme au standard **TOTP** (*Time-based One-Time Password*).
