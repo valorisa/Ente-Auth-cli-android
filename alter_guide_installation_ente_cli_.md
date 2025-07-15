@@ -129,6 +129,76 @@ Utilisation :
 ./totp.sh all  # (si vous adaptez le script pour tout lister)
 ```
 
+Ou encore : 
+
+Présence de **plusieurs secrets TOTP** dans `secrets.txt`, chacun au format `otpauth://...`.
+
+Voici un moyen simple de les exploiter efficacement avec un script bash qui :
+
+- Liste tous les services disponibles
+- Te permet de **générer un TOTP pour un service donné**
+- Ou tous d’un coup
+
+### **Script : `totp.sh`**
+
+```bash
+#!/bin/bash
+
+SECRETS_FILE="secrets.txt"
+
+if [ ! -f "$SECRETS_FILE" ]; then
+  echo "Fichier $SECRETS_FILE introuvable."
+  exit 1
+fi
+
+if [ -z "$1" ]; then
+  echo "Utilisation : $0 <NomDuService> ou 'all' pour tous"
+  exit 1
+fi
+
+if [ "$1" == "all" ]; then
+  grep -o 'otpauth://[^ ]*' "$SECRETS_FILE" | while read -r line; do
+    NAME=$(echo "$line" | cut -d ':' -f 3 | cut -d '?' -f 1)
+    SECRET=$(echo "$line" | grep -o 'secret=[^&]*' | cut -d= -f2)
+    CODE=$(oathtool --totp -b "$SECRET")
+    echo "$NAME: $CODE"
+  done
+else
+  MATCHES=$(grep -i "$1" "$SECRETS_FILE" | grep -o 'otpauth://[^ ]*')
+  if [ -z "$MATCHES" ]; then
+    echo "Aucun secret trouvé pour $1"
+    exit 1
+  fi
+
+  echo "$MATCHES" | while read -r line; do
+    NAME=$(echo "$line" | cut -d ':' -f 3 | cut -d '?' -f 1)
+    SECRET=$(echo "$line" | grep -o 'secret=[^&]*' | cut -d= -f2)
+    CODE=$(oathtool --totp -b "$SECRET")
+    echo "$NAME: $CODE"
+  done
+fi
+```
+
+### **Utilisation :**
+
+```bash
+chmod +x totp.sh
+
+# Pour un service donné (ex: "GitHub")
+./totp.sh GitHub
+
+# Pour tous les comptes 2FA
+./totp.sh all
+```
+
+### **Résultat attendu :**
+
+```text
+GitHub: 839201
+Google: 120398
+Yahoo: 997722
+```
+
 ## Sécurité
 
 - Ne partagez jamais publiquement votre fichier `secrets.txt`
