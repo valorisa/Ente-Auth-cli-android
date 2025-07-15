@@ -243,13 +243,3 @@ gpg -c export.txt
 *Réalisé pour sécuriser et automatiser la récupération de vos codes 2FA depuis les exports de l’application Ente Auth.*
 
 ```
-
-
-**Sauvegarde ce contenu dans un fichier nommé :**
-
-
-```bash
-
-alternate_readme.md
-
-```
