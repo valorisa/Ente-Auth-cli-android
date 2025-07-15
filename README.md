@@ -116,6 +116,23 @@ Utilisation (ici GitHub ou un autre service comme Gmail, etc.,) :
 totp GitHub
 ```
 
+## Conclusion 
+
+Comparer les codes générés par un script `Totp.sh` et ceux de l’application mobile Ente Auth est la meilleure méthode rigoureuse pour vérifier la justesse de la génération TOTP.
+
+Ce que l’on constate confirme ce que détaillent les ressources :  
+Ente Auth (mobile ou CLI) est une application conforme au standard **TOTP** (*Time-based One-Time Password*).
+
+Le code à 6 chiffres est calculé à partir du **secret partagé** et de l’heure courante, renouvelé toutes les 30 secondes.
+
+Tant que l’heure du système Android et celle de l’environnement Ubuntu sous Termux restent bien synchronisées (il suffit que les appareils soient réglés automatiquement), les codes générés seront toujours identiques : ils se basent strictement sur la même clé et le même timestamp.
+
+Cela montre ainsi que :
+
+- **L’interopérabilité** entre Ente Auth mobile et les outils CLI est parfaite pour le TOTP : on peut générer les mêmes codes sur son smartphone et sur son environnement Ubuntu/Termux, en toute sécurité.
+- La restitution depuis un **backup chiffré Ente Auth**, puis l’usage de `oathtool` (ou équivalent), reproduit exactement ce que fait l’application mobile.
+- Cette **vérification de cohérence entre plateformes** est en phase avec les recommandations de sécurité modernes : on peut restaurer ou migrer ses secrets 2FA tout en gardant la maîtrise totale sur ses accès, même en cas de perte ou changement d’appareil.
+
 ## Références
 
 - [Documentation officielle Ente Auth – README](https://github.com/ente-io/ente/blob/main/README.md)[5]
