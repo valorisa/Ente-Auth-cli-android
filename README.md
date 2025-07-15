@@ -118,9 +118,9 @@ totp GitHub
 
 ## Références
 
-- Documentation officielle Ente Auth – README
-- Exporting your data from Ente Auth (Help Ente)
-- Ente Auth – Site officiel
+- [Documentation officielle Ente Auth – README](https://github.com/ente-io/ente/blob/main/auth/README.md)[5]
+- [Exporting your data from Ente Auth (Help Ente)](https://help.ente.io/auth/migration-guides/export)[7]
+- [Ente Auth – Site officiel](https://ente.io/auth/)[4]
 
 **Ce guide vise à garantir la sécurité et la portabilité de vos codes 2FA, tout en restant fidèle à l’esprit open source et à la documentation officielle Ente.**
 
