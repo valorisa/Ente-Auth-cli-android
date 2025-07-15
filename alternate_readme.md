@@ -175,7 +175,7 @@ GitHub: username                    : 693174
 
 Microsoft: username@hotmail.com     : 421703
 
-SFTPGo:Admin "admin"               : 759021
+SFTPGo:Admin "admin"                : 759021
 
 Yahoo: username@yahoo.com           : 002398
 
