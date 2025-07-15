@@ -1,3 +1,4 @@
+```text
 .
 ├── cli-v0.2.3
 │   ├── ente-cli-v0.2.3-darwin-amd64.tar.gz
@@ -19,3 +20,4 @@
 └── cli-v0.2.3-tree.md
 
 2 directories, 17 files
+```
