@@ -118,7 +118,7 @@ totp GitHub
 
 ## Références
 
-- [Documentation officielle Ente Auth – README](https://github.com/ente-io/ente/blob/main/auth/README.md)[5]
+- [Documentation officielle Ente Auth – README](https://github.com/ente-io/ente/blob/main/README.md))[5]
 - [Exporting your data from Ente Auth (Help Ente)](https://help.ente.io/auth/migration-guides/export)[7]
 - [Ente Auth – Site officiel](https://ente.io/auth/)[4]
 
