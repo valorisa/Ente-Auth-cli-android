@@ -242,4 +242,5 @@ gpg -c export.txt
 
 *Réalisé pour sécuriser et automatiser la récupération de vos codes 2FA depuis les exports de l’application Ente Auth.*
 
-```
+**Note** :
+Environnement Termux sous Android avec lancement de la commande `proot-distro login ubuntu`.
