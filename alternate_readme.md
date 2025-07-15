@@ -161,7 +161,7 @@ Pour obtenir tous les codes TOTP actuels :
 
 ```
 
-./script_clean.sh
+clear && bash script_clean.sh && cat resultats_clean.txt
 
 ```
 
