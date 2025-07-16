@@ -5,7 +5,7 @@ Voici comment lancer et utiliser `ente-cli` avec la méthode **Docker via Alpine
 ### 1. Prérequis
 
 - **Termux** installé depuis F-Droid
-- **Bon espace de stockage** (prévoir >4 Go pour l’image QEMU + conteneurs)
+- **Bon espace de stockage** (prévoir >10 Go pour l’image QEMU + conteneurs)
 - **Connexion internet rapide**  
 - Matériel : plus le téléphone est puissant (RAM/CPU), plus l’expérience sera fluide (mais, attendez-vous à des lenteurs)
 
