@@ -118,7 +118,7 @@ ENTRYPOINT [ "/app/ente-cli" ]
 - **Sécurité** : change le mot de passe root Alpine, configure SSH si ouverture réseau.
 - **Alternatives simples** : sur Android non-rooté, le workflow proot-distro/Ubuntu reste plus rapide et léger en ressources.
 
-En résumé, **tu peux exécuter Docker, donc n’importe quel outil CLI comme ente-cli, dans Alpine Linux lancé via QEMU depuis Termux sur Android**, à condition d'accepter les temps d’exécution importants et quelques bidouilles réseau/stockage pour récupérer les fichiers[1][2][3][6][8].
+En résumé, **on peut exécuter Docker, donc n’importe quel outil CLI comme ente-cli, dans Alpine Linux lancé via QEMU depuis Termux sur Android**, à condition d'accepter les temps d’exécution importants et quelques bidouilles réseau/stockage pour récupérer les fichiers[1][2][3][6][8].
 
 Citations :
 [1] Running Docker using QEMU on an Android Device - MoToots https://www.motoots.com/2021/03/running-docker-using-qemu-on-android.html
